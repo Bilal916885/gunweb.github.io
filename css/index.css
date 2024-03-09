@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+
+    
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: myfont;
+    src: url(inter.ttf);
+}
+@font-face {
+    font-family: myfontt;
+    src: url(interr.ttf);
+}
+.main-bg{
+    background-color: #181818;
+    position: relative;
+    /* height: 66vw; */
+    width: 100%;
+    height: 70vw;
+    z-index: 10;
+
+}
+.crcl{
+    position: absolute;
+    width: 37vw;
+    left: 0;
+    
+}
+.ball{
+    position: absolute;
+     width: 3vw;
+    right: 10%;
+    top: 6%;
+    animation:tada 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+}
+
+.center{
+    width: 90%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: auto;
+    /* height: 50vw; */
+    /* margin: 4rem; */
+
+    margin-top: 8vw;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27vw;
+    padding-top: 2vw;
+}
+.navbar .cntr{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .lft h4{
+    font-size: 2.6vw;
+    color: #fff;
+    font-family: myfont;
+    
+}
+.navbar .cntr h5{
+    font-size: 1.2vw;
+    color: #fff;
+    font-family: myfontt;
+    cursor: pointer;
+    transition: .3s;
+    
+}
+.navbar .cntr h5:hover{
+    text-decoration: underline;
+}
+.navbar .mon img{
+    width: 2vw;
+    animation:flash 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+}
+
+.center .contnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 7vw;
+    z-index: 6;
+}
+
+.main-bg .contnt .left-cnt h4 span{
+    background-image: linear-gradient(to right, #f39349,#f0533f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.main-bg .contnt .left-cnt h4 a{
+    background-image: linear-gradient(to right,#9574ef,#e85b9f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3vw;
+}
+.main-bg .contnt .left-cnt h4{
+    font-size: 3vw;
+    color: #fff;
+    font-family: myfont;
+    line-height: 4vw;
+}
+.main-bg .contnt .left-cnt p{
+    font-size: 1.4vw;
+    color: #fff;
+    font-family: myfontt;
+    line-height: 1.9vw;
+    margin-top: 1vw;
+}
+.main-bg .contnt .left-cnt button{
+    border: none;
+    outline: none;
+    width: 12.6vw;
+    padding: 1vw;
+    background-color: #f39349;
+    font-size: 1.3vw;
+    color: #fff;
+    font-family: myfontt;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2.8vw;
+    transition: .3s;
+}
+.main-bg .contnt .left-cnt button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.main-bg .contnt .left-cnt{
+    width: 60%;
+}
+
+.main-bg .contnt .right-cnt{
+    width: 50%;
+}
+.main-bg .contnt .right-cnt img{
+    width: 37vw;
+}
+
+
+
+
+
+
+
+
+
+ .cpsl{
+    position: absolute;
+    left: 0;
+    width: 9vw;
+    z-index: 6;
+    /* bottom: 17rem; */
+    top: 45%;
+    /* animation:shakeX 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate; */
+    animation:fadeIn 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+    
+}
+.dba{
+    position: absolute;
+    right:50%;
+    z-index: 6;
+    /* bottom: 9rem; */
+    top: 76%;
+    width: 7vw;
+    animation:jello 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+}
+.ring{
+    position: absolute;
+    right: 0;
+    width: 10vw;
+    top:76%;
+    z-index:-1;
+    /* animation:shakeX 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate; */
+    /* animation:fadeIn 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate; */
+
+}
+.crclll{
+    position: absolute;
+    right: 2%;
+    width: 28vw;
+    top: 50%;
+        
+} 
+
+@media only screen and (max-width:600px){
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10vw;
+        padding-top: 2vw;
+    }
+    .navbar .mon img{
+        width: 2.6vw;
+    }
+    .navbar .lft h4{
+        font-size: 3vw;
+        color: #fff;
+        font-family: myfont;
+        
+    }
+    .center{
+        border-radius: 16px;
+    }
+    .main-bg .contnt .left-cnt button{
+        border-radius: 4px;
+        line-height: 2vw;
+    }
+    .navbar .lft h4{
+        font-size: 2.7vw;
+        color: #fff;
+        font-family: myfont;
+        
+    }
+    
+}
+@media only screen and (max-width:480px){
+.dba{
+    position: absolute;
+    right:50%;
+    z-index: 6;
+    /* bottom: 9rem; */
+    top: 78%;
+    width: 7vw;
+    animation:jello 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+}
+}
+@media only screen and (max-width:430px){
+    .dba{
+        position: absolute;
+        right:50%;
+        z-index: 6;
+        /* bottom: 9rem; */
+        top: 79%;
+        width: 7vw;
+        animation:jello 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+    }
+}
+@media only screen and (max-width:350px){
+    .dba{
+        position: absolute;
+        right:50%;
+        z-index: 6;
+        /* bottom: 9rem; */
+        top: 80%;
+        width: 7vw;
+        animation:jello 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
